@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.6.96/css/materialdesignicons.min.css">
+</head>
+<body>
+  <div class="container">
+        <section class="leTout">
+        <section class="section1 card">
+            <div>
+                <h1>JavaScript Quiz</h1>
+                <p class="entt">Évaluez vos connaissances en <br> JavaScript en répondant aux questions <br> que nous avons spécialement <br> sélectionnées pour vous. <br>
+                    C'est fun et c'est gratuit. </p>
+
+            </div>
+            <form class="monForm1" id="enregistrement">
+                <span class="nom">Nom</span><br>
+                <label for=""></label>
+                    <input type="text" class="inpt1" id="mon1inpt" required></label>
+                <br>
+                    <span id="errNom" class="spanErr"></span>
+
+                    <span class="mail">Mail</span><br>
+                    <input type="email" class="inpt1 InpPourMail"  id="mon2inpt" required></label><br>
+                    <span id="errMail"></span>
+
+                    <button type="submit" class="commencer" id="deb">Commencer</button>
+                    
+
+            </form>
+        </section>
+        
+        
+        <section class="section2 card">
+            <div>
+                
+                    <h1>JavaScript Quiz</h1>
+                    <!-- les question -->
+                    <div class="question">
+                        <p class="entt" id="affiche-question"></p>
+
+                    </div>
+                    <!-- le compteur  et le nombre des question -->
+                    <div class="questMint">
+                        <!-- la div pour la quotation  sur 15-->
+                        <div class="quest">
+                            <p>Question <span id="question-compteur"></span></p>
+
+                        </div>
+                         <!-- la div pour le minuteur sur 60-->
+                        <div class="mint">
+                            <p id="coutDown"></p>
+
+                        </div>
+                    </div>
+                    <div class="progress">
+                        <div class="ProgressionAv">
+                            <div class="ProgressionAp">
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                    <form action="#" id="questionForm">
+                   <div class="assertions" id="assertions">
+                    <label for="assertion1" class="s2"><input type="radio" name="r1" id="assertion1" class="assertionRep"><span id="afficheAssertion1"></span></label >
+                    <label for="assertion2" class="s2"><input class="assertionRep" type="radio" id="assertion2" name="r1"><span id="afficheAssertion2"></span></label >
+                    <label for="assertion3" class="s2"><input class="assertionRep" type="radio" name="r1" id="assertion3"><span id="afficheAssertion3"></span></label >
+                    <label for="assertion4" class="s2"><input class="assertionRep" type="radio" name="r1" id="assertion4"><span id="afficheAssertion4"></span></label >
+                    
+                   </div >
+                   <div class="btnAcu">
+                    <button type="button" class="quiter" id="quitter">Quiter</button>
+                    <button type="submit" class="suivant" id="question-suivant" disabled>Suivant</button>
+                   </div>
+                </form>
+                
+            </div>
+
+        </section>
+        <section class="recup1 card">
+        <div class="recup1">
+            <div class="recupNom">
+                <p id="recupNom">Josephe</p>
+            </div>
+
+            <div class="recupMail">
+                <p id="recupMail">Josephe@kinshasadigital.com</p>
+            </div>
+
+            <div class="symblcote">
+                <div class="mdi mdi-check-circle-outline" id="result_symbole"></div>
+
+            </div>
+            <div class="cote">
+                <p id="points"></p>
+
+            </div>
+            <div class="btnAcu">
+                <button onclick="window.location.reload()" class="btnAcu1">Acceuil</button>
+
+           </div>
+        </div>
+        </section>
+    </div>
+  <script src=""></script>
+  <script src="script.js"></script>
+</body>
+</html>
